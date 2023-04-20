@@ -8,9 +8,9 @@
 import Foundation
 import CleanArchKit
 
-struct UserMapper: MapperToEntity {
+struct UserMapper: MapperToDomainEntity {
     
-    static func mapToEntity(type: UserRaw) -> UserDomain {
+    static func mapToDomain(type: UserRaw) -> UserDomain {
         UserDomain(
             firtName: type.firtName ?? "-",
             lastName: type.lastName ?? "-",

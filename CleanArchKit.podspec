@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'CleanArchKit'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.swift_version    = "5.0"
   s.summary          = 'An iOS library to create a project with the Clean Architecture using Router and MVVM pattern.'
 
@@ -21,8 +21,5 @@ DESC
   s.exclude_files = 'CleanArchKit/CleanArchKitTests/**/*.{swift}'
   
   s.frameworks = 'UIKit'
-  s.dependency 'RxSwift', '~> 6.1.0'
-  s.dependency 'RxCocoa', '~> 6.1.0'
-  s.dependency 'RxDataSources', '~> 5.0'
   
 end

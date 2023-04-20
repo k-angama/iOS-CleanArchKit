@@ -8,6 +8,7 @@
 import Foundation
 import RxSwift
 import CleanArchKit
+import NSObject_Rx
 
 class SecondViewModel: BaseViewModel<SecondRouter, SecondViewModel.Input, SecondViewModel.Output> {
     
@@ -39,7 +40,7 @@ class SecondViewModel: BaseViewModel<SecondRouter, SecondViewModel.Input, Second
             }, onDisposed: { [weak self] in
                 self?.output.isLoarding.onNext(false)
             })
-            .disposed(by: disposeBag)
+            .disposed(by: rx.disposeBag)
         
     }
     
@@ -50,7 +51,7 @@ class SecondViewModel: BaseViewModel<SecondRouter, SecondViewModel.Input, Second
             .subscribe { [weak self] _ in
                 self?.router.transition(route: .dismiss)
             }
-            .disposed(by: disposeBag)
+            .disposed(by: rx.disposeBag)
         
     }
     

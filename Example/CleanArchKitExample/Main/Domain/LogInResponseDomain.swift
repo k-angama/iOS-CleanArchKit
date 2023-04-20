@@ -6,7 +6,8 @@
 //
 
 import Foundation
+import CleanArchKit
 
-struct LogInResponseDomain {
+struct LogInResponseDomain: EntityDomain {
     let userId: String
 }

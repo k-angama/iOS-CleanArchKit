@@ -9,11 +9,15 @@ target 'CleanArchKitExample' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
-  # Pods for GameBridge
+ # RxSwift
+  pod 'RxCocoa', '6.2.0'
+  pod 'NSObject+Rx', '5.2.2'
+end
+
+target 'CleanArchKitExampleTests' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
 
  # RxSwift
-  pod 'RxSwift', '6.1.0'
-  pod 'RxCocoa', '6.1.0'
-  pod 'RxDataSources', '5.0'
-  
+  pod 'RxSwift', '6.2.0'
 end

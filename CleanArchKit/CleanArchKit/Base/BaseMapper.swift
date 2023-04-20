@@ -7,22 +7,26 @@
 
 import Foundation
 
-public protocol BaseMapper: MapperFromEntity, MapperToEntity {}
+public protocol BaseMapper: MapperFromDomainEntity, MapperToDomainEntity {}
 
-public protocol MapperFromEntity {
+public protocol MapperFromDomainEntity {
     
-    associatedtype A
-    associatedtype B
+    associatedtype A: EntityDomain
+    associatedtype B: EntityRaw
     
-    static func mapFromEntity(type: A) -> B
+    static func mapFromDomain(type: A) -> B
     
 }
 
-public protocol MapperToEntity{
+public protocol MapperToDomainEntity{
     
-    associatedtype A
-    associatedtype B
+    associatedtype A: EntityDomain
+    associatedtype B: EntityRaw
     
-    static func mapToEntity(type: B) -> A
+    static func mapToDomain(type: B) -> A
     
 }
+
+public protocol EntityRaw {}
+
+public protocol EntityDomain {}

@@ -15,7 +15,7 @@ struct GetUserUseCase: BaseUseCase {
     
     func execute(params: Any?) -> Single<UserDomain> {
         userAPI.getUser()
-            .map(UserMapper.mapToEntity)
+            .map(UserMapper.mapToDomain)
     }
     
 }

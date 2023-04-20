@@ -6,7 +6,8 @@
 //
 
 import Foundation
+import CleanArchKit
 
-struct LogInResponseRaw {
+struct LogInResponseRaw: EntityRaw {
     let userId: String?
 }

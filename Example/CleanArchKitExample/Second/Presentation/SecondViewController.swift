@@ -7,7 +7,7 @@
 
 import Foundation
 import RxSwift
-import RxCocoa
+import NSObject_Rx
 import CleanArchKit
 
 class SecondViewController: BaseViewController<SecondViewModel> {
@@ -18,15 +18,14 @@ class SecondViewController: BaseViewController<SecondViewModel> {
     @IBOutlet weak var indicatorView: UIActivityIndicatorView!
     @IBOutlet weak var closeButton: UIBarButtonItem!
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
+    // Setup user interface
+    override func setupUI() {
+        // Configure user interface here
     }
     
     // Setup bindings
     override func setupBindings() {
-
-        closeButton.rx.tap.bind(to: viewModel.input.closeButton).disposed(by: disposeBag)
+        closeButton.rx.tap.bind(to: viewModel.input.closeButton).disposed(by: rx.disposeBag)
     }
     
     // Setup observers
@@ -35,28 +34,23 @@ class SecondViewController: BaseViewController<SecondViewModel> {
         viewModel.output.isLoarding
             .observe(on: MainScheduler.instance)
             .bind(to: indicatorView.rx.isAnimating)
-            .disposed(by: disposeBag)
+            .disposed(by: rx.disposeBag)
         
         viewModel.output.firstname
             .observe(on: MainScheduler.instance)
             .bind(to: firstnameLabel.rx.text)
-            .disposed(by: disposeBag)
+            .disposed(by: rx.disposeBag)
         
         viewModel.output.lastname
             .observe(on: MainScheduler.instance)
             .bind(to: lastnameLabel.rx.text)
-            .disposed(by: disposeBag)
+            .disposed(by: rx.disposeBag)
         
         viewModel.output.email
             .observe(on: MainScheduler.instance)
             .bind(to: emailLabel.rx.text)
-            .disposed(by: disposeBag)
+            .disposed(by: rx.disposeBag)
         
-    }
-        
-    // Setup user interface
-    override func setupUI() {
-        // Configure user interface here
     }
 
 }

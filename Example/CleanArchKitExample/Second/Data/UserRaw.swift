@@ -6,8 +6,9 @@
 //
 
 import Foundation
+import CleanArchKit
 
-struct UserRaw {
+struct UserRaw: EntityRaw {
     let firtName: String?
     let lastName: String?
     let email: String?

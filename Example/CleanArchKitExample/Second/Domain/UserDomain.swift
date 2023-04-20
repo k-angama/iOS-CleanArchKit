@@ -6,8 +6,9 @@
 //
 
 import Foundation
+import CleanArchKit
 
-struct UserDomain {
+struct UserDomain: EntityDomain {
     let firtName: String
     let lastName: String
     let email: String
