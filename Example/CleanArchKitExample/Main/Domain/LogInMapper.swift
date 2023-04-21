@@ -8,9 +8,9 @@
 import Foundation
 import CleanArchKit
 
-struct LogInMapper: MapperToEntity {
+struct LogInMapper: MapperToDomainEntity {
     
-    static func mapToEntity(type: LogInResponseRaw) -> LogInResponseDomain {
+    static func mapToDomain(type: LogInResponseRaw) -> LogInResponseDomain {
         LogInResponseDomain(
             userId: type.userId ?? ""
         )

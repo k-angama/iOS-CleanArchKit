@@ -7,7 +7,6 @@
 
 import Foundation
 import UIKit
-import RxSwift
 
 open class BaseViewController<T: ViewModelProtocol>: UIViewController, ViewControllerProtocol, DIProtocol  {
     
@@ -16,10 +15,6 @@ open class BaseViewController<T: ViewModelProtocol>: UIViewController, ViewContr
      */
     public var viewModel:T!
     
-    /**
-     * This returns ARC (RAII) like resource management to `RxSwift`.
-     */
-    public var disposeBag = DisposeBag()
     
     open override func viewDidLoad() {
         super.viewDidLoad()
@@ -49,5 +44,9 @@ open class BaseViewController<T: ViewModelProtocol>: UIViewController, ViewContr
      * Manage user interface here
      */
     open func setupUI() {}
+    
+    deinit {
+        print("deinit ViewController - \(Self.debugDescription())")
+    }
     
 }

@@ -9,6 +9,7 @@ import Foundation
 import RxSwift
 import RxCocoa
 import CleanArchKit
+import NSObject_Rx
 
 class MainViewController: BaseViewController<MainViewModel> {
     
@@ -21,7 +22,7 @@ class MainViewController: BaseViewController<MainViewModel> {
     
     override func setupBindings() {
         
-        button.rx.tap.bind(to: viewModel.input.tabButton).disposed(by: disposeBag)
+        button.rx.tap.bind(to: viewModel.input.tabButton).disposed(by: rx.disposeBag)
         
     }
 

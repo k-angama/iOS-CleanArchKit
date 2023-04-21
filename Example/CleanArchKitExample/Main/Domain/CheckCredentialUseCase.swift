@@ -15,7 +15,7 @@ struct CheckCredentialUseCase: BaseUseCase {
 
     func execute(params: (email: String, password: String)) -> Single<LogInResponseDomain>  {
         loginAPI.logIn(email: params.email, password: params.password)
-            .map(LogInMapper.mapToEntity)
+            .map(LogInMapper.mapToDomain)
     }
     
 }

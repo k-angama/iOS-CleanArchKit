@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import RxSwift
+import UIKit
 
 open class BaseViewModel<T: Router, Input: InputProtocol, Output: OutputProtocol>: NSObject,  ViewModelProtocol {
     
@@ -14,17 +14,27 @@ open class BaseViewModel<T: Router, Input: InputProtocol, Output: OutputProtocol
     
     public var output: Output
     
-    public let router: T
+    private var _router: T
+    public var router: T {
+        if(Thread.callStackSymbols.contains(where: {
+            $0.contains("UIViewController")
+        })){
+            let message = "Not used to the UIViewController"
+            #if DEBUG
+            fatalError(message)
+            #else
+            print(message)
+            #endif
+        }
+        return _router
+    }
     
-    /**
-     * This returns ARC (RAII) like resource management to `RxSwift`.
-     */
-    public let disposeBag = DisposeBag()
     
     required public init(viewController: UIViewController? = nil) {
         self.input = Input()
         self.output = Output()
-        self.router = T(viewController: viewController)
+        self._router = T(viewController: viewController)
+        
     }
     
     /**
@@ -41,5 +51,9 @@ open class BaseViewModel<T: Router, Input: InputProtocol, Output: OutputProtocol
      * Add Observers
      */
     open func observers() {}
+    
+    deinit {
+        print("deinit ViewModel - \(Self.debugDescription())")
+    }
     
 }

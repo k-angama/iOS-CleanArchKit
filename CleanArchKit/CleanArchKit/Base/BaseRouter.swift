@@ -26,4 +26,7 @@ open class BaseRouter<T: Route>: Router {
 
     open func transition(route: T) {}
     
+    deinit {
+        print("deinit Router - \(Self.self)")
+    }
 }

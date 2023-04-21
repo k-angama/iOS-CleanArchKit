@@ -8,9 +8,11 @@
 import Foundation
 import RxSwift
 import CleanArchKit
+import NSObject_Rx
 
 class MainViewModel: BaseViewModel<MainRouter, MainViewModel.Input, MainViewModel.Output> {
     
+    public let disposeBag_ = DisposeBag()
     struct Input: InputProtocol {
         let email = BehaviorSubject<String>(value: "")
         let password = BehaviorSubject<String>(value: "")
@@ -30,7 +32,7 @@ class MainViewModel: BaseViewModel<MainRouter, MainViewModel.Input, MainViewMode
             .bind { [weak self] _ in
                 self?.router.transition(route: .showSecond)
             }
-            .disposed(by: disposeBag)
+            .disposed(by: rx.disposeBag)
     }
     
 }
