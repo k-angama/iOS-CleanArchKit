@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'CleanArchKit'
-  s.version          = '0.1.1'
+  s.version          = '0.1.2'
   s.swift_version    = "5.0"
   s.summary          = 'An iOS library to create a project with the Clean Architecture using Router and MVVM pattern.'
 

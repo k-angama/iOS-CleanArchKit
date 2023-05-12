@@ -15,19 +15,31 @@ open class BaseViewController<T: ViewModelProtocol>: UIViewController, ViewContr
      */
     public var viewModel:T!
     
+    public override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
+        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
+        initViewModel()
+    }
+    
+    required public init(coder: NSCoder) {
+        super.init(coder: coder)!
+        initViewModel()
+    }
     
     open override func viewDidLoad() {
         super.viewDidLoad()
-        viewModel = T(viewController: self)
-        if(self.conforms(to: DIProtocol.self) && self.responds(to: #selector(DIProtocol.di))) {
-            self.perform(#selector(DIProtocol.di))
-        }
         setupUI()
         setupBindings()
         setupObservers()
         viewModel.setup()
         viewModel.exeUseCase()
         viewModel.observers()
+    }
+    
+    private func initViewModel() {
+        viewModel = T(viewController: self)
+        if(self.conforms(to: DIProtocol.self) && self.responds(to: #selector(DIProtocol.di))) {
+            self.perform(#selector(DIProtocol.di))
+        }
     }
     
     /**
@@ -44,6 +56,7 @@ open class BaseViewController<T: ViewModelProtocol>: UIViewController, ViewContr
      * Manage user interface here
      */
     open func setupUI() {}
+
     
     deinit {
         print("deinit ViewController - \(Self.debugDescription())")
