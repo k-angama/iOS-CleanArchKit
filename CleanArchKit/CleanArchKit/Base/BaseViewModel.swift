@@ -16,10 +16,13 @@ open class BaseViewModel<T: Router, Input: InputProtocol, Output: OutputProtocol
     
     private var _router: T
     public var router: T {
-        if(Thread.callStackSymbols.contains(where: {
-            $0.contains("UIViewController")
-        })){
-            let message = "Not used to the UIViewController"
+        guard !Thread.callStackSymbols.isEmpty &&
+               Thread.callStackSymbols.count > 0
+        else { return _router }
+        let symbol = Thread.callStackSymbols[1]
+        
+        if symbol.contains("ViewController") {
+            let message = "Router cannot be called in a viewController"
             #if DEBUG
             fatalError(message)
             #else
@@ -29,12 +32,10 @@ open class BaseViewModel<T: Router, Input: InputProtocol, Output: OutputProtocol
         return _router
     }
     
-    
     required public init(viewController: UIViewController? = nil) {
         self.input = Input()
         self.output = Output()
         self._router = T(viewController: viewController)
-        
     }
     
     /**

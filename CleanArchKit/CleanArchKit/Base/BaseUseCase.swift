@@ -7,6 +7,17 @@
 
 import Foundation
 
+/// Define your use cases by creating classes conforming to the UseCase protocol
+///
+/// ```swift
+///
+/// struct MyUseCase: UseCase {
+///     func execute(params: String) -> Bool {
+///         // Implement your logic here
+///     }
+/// }
+///
+/// ```
 public protocol BaseUseCase {
     
     associatedtype Input
