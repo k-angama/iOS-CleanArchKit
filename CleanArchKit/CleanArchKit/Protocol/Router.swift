@@ -8,9 +8,8 @@
 import Foundation
 import UIKit
 
-/**
- * Route for describes which routes can be triggered.
- */
+/// Route for describes which routes can be triggered.
+/// 
 public protocol Route { }
 
 public protocol Router: AnyObject {

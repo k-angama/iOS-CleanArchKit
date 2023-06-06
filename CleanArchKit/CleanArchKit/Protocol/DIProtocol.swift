@@ -7,6 +7,18 @@
 
 import Foundation
 
+/// Implement dependency injection using the DIProtocol:
+///
+/// ```swift
+///
+/// extension MainViewController {
+///     @objc func di() {
+///         self.viewModel.input.checkCredentialUseCase = CheckCredentialUseCase(loginAPI: RegistrationAPI())
+///         self.viewModel.input.checkValidEmailUseCase = CheckValidEmailUseCase()
+///     }
+/// }
+///
+/// ```
 @objc public protocol DIProtocol {
     @objc optional func di()
 }
