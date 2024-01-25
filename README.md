@@ -8,11 +8,13 @@ CleanArchKit is an iOS framework developed in Swift that implements Clean Archit
 CleanArchKit requires the following:
 
 * Xcode 11.0 or later
-* Swift 5.0 or later
-* iOS 11.0 or later
+* Swift 5.4 or later
+* iOS 12.0 or later
 
 
 ## Installation
+
+### CocoaPods
 
 To install this framework using [CocoaPods](https://cocoapods.org), add the following line to your Podfile:
 
@@ -21,6 +23,12 @@ pod 'CleanArchKit'
 ```
 
 Then run `pod install` in your terminal.
+
+### Swift Package Manager
+
+1. In Xcode, navigate in menu: File > Add Package Dependencies
+2. Add `https://github.com/k-angama/iOS-CleanArchKit.git`
+3. Click Add Package.
 
 
 ## Usage

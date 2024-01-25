@@ -1,8 +1,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'CleanArchKit'
-  s.version          = '0.1.3'
-  s.swift_version    = "5.0"
+  s.version          = '0.1.4'
+  s.swift_version    = "5.4"
   s.summary          = 'An iOS library to create a project with the Clean Architecture using Router and MVVM pattern.'
 
   s.description      = <<-DESC
@@ -15,10 +15,10 @@ DESC
   s.source           = { :git => 'https://github.com/k-angama/iOS-CleanArchKit.git', :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/k_angama'
 
-  s.ios.deployment_target = '11.0'
+  s.ios.deployment_target = '12.0'
 
-  s.source_files = 'CleanArchKit/**/*.{swift}'
-  s.exclude_files = 'CleanArchKit/CleanArchKitTests/**/*.{swift}'
+  s.source_files = 'Sources/CleanArchKit/**/*.{swift}'
+  s.exclude_files = 'Tests/CleanArchKit/CleanArchKitTests/**/*.{swift}'
   
   s.frameworks = 'UIKit'
   

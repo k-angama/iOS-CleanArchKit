@@ -8,18 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		2525942529F19DDF0007F0D1 /* CleanArchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 256205FC29E5A2CB00896F1C /* CleanArchKit.framework */; };
-		2525942E29F27DE30007F0D1 /* MockMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2525942D29F27DE30007F0D1 /* MockMapper.swift */; };
-		2562060A29E5A2CB00896F1C /* CleanArchKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2562060929E5A2CB00896F1C /* CleanArchKitTests.swift */; };
-		2562060B29E5A2CB00896F1C /* CleanArchKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 256205FF29E5A2CB00896F1C /* CleanArchKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2562063729E5A55D00896F1C /* ViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2562063629E5A55D00896F1C /* ViewModelProtocol.swift */; };
-		2562063929E5A58A00896F1C /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2562063829E5A58A00896F1C /* BaseViewModel.swift */; };
-		2562063B29E5A5D000896F1C /* ViewControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2562063A29E5A5D000896F1C /* ViewControllerProtocol.swift */; };
-		2562063D29E5A5E100896F1C /* DIProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2562063C29E5A5E100896F1C /* DIProtocol.swift */; };
-		2562063F29E5A5F300896F1C /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2562063E29E5A5F300896F1C /* BaseViewController.swift */; };
-		2562064129E5A61800896F1C /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2562064029E5A61800896F1C /* Router.swift */; };
-		2562064329E5A64700896F1C /* BaseRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2562064229E5A64700896F1C /* BaseRouter.swift */; };
-		25C293D729E6A0830062AE27 /* BaseUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C293D629E6A0830062AE27 /* BaseUseCase.swift */; };
-		25C293D929E6A0BD0062AE27 /* BaseMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C293D829E6A0BD0062AE27 /* BaseMapper.swift */; };
+		280F996D2B629F7700F905B6 /* CleanArchKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280F996B2B629F7700F905B6 /* CleanArchKitTests.swift */; };
+		280F99712B62A0A100F905B6 /* MockMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280F99702B62A0A100F905B6 /* MockMapper.swift */; };
+		280F997E2B62A0D700F905B6 /* ViewControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280F99732B62A0D700F905B6 /* ViewControllerProtocol.swift */; };
+		280F997F2B62A0D700F905B6 /* ViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280F99742B62A0D700F905B6 /* ViewModelProtocol.swift */; };
+		280F99802B62A0D700F905B6 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280F99752B62A0D700F905B6 /* Router.swift */; };
+		280F99812B62A0D700F905B6 /* DIProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280F99762B62A0D700F905B6 /* DIProtocol.swift */; };
+		280F99822B62A0D700F905B6 /* BaseUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280F99782B62A0D700F905B6 /* BaseUseCase.swift */; };
+		280F99832B62A0D700F905B6 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280F99792B62A0D700F905B6 /* BaseViewController.swift */; };
+		280F99842B62A0D700F905B6 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280F997A2B62A0D700F905B6 /* BaseViewModel.swift */; };
+		280F99852B62A0D700F905B6 /* BaseRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280F997B2B62A0D700F905B6 /* BaseRouter.swift */; };
+		280F99862B62A0D700F905B6 /* BaseMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280F997C2B62A0D700F905B6 /* BaseMapper.swift */; };
+		280F99872B62A0D700F905B6 /* CleanArchKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 280F997D2B62A0D700F905B6 /* CleanArchKit.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,20 +34,20 @@
 
 /* Begin PBXFileReference section */
 		2525941929F18B290007F0D1 /* RxSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RxSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2525942D29F27DE30007F0D1 /* MockMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockMapper.swift; sourceTree = "<group>"; };
 		256205FC29E5A2CB00896F1C /* CleanArchKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CleanArchKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		256205FF29E5A2CB00896F1C /* CleanArchKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CleanArchKit.h; sourceTree = "<group>"; };
 		2562060429E5A2CB00896F1C /* CleanArchKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CleanArchKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2562060929E5A2CB00896F1C /* CleanArchKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanArchKitTests.swift; sourceTree = "<group>"; };
-		2562063629E5A55D00896F1C /* ViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelProtocol.swift; sourceTree = "<group>"; };
-		2562063829E5A58A00896F1C /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
-		2562063A29E5A5D000896F1C /* ViewControllerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerProtocol.swift; sourceTree = "<group>"; };
-		2562063C29E5A5E100896F1C /* DIProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIProtocol.swift; sourceTree = "<group>"; };
-		2562063E29E5A5F300896F1C /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
-		2562064029E5A61800896F1C /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
-		2562064229E5A64700896F1C /* BaseRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRouter.swift; sourceTree = "<group>"; };
-		25C293D629E6A0830062AE27 /* BaseUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseUseCase.swift; sourceTree = "<group>"; };
-		25C293D829E6A0BD0062AE27 /* BaseMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseMapper.swift; sourceTree = "<group>"; };
+		280F996B2B629F7700F905B6 /* CleanArchKitTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CleanArchKitTests.swift; path = ../../Tests/CleanArchKitTests/CleanArchKitTests.swift; sourceTree = "<group>"; };
+		280F99702B62A0A100F905B6 /* MockMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockMapper.swift; sourceTree = "<group>"; };
+		280F99732B62A0D700F905B6 /* ViewControllerProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerProtocol.swift; sourceTree = "<group>"; };
+		280F99742B62A0D700F905B6 /* ViewModelProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModelProtocol.swift; sourceTree = "<group>"; };
+		280F99752B62A0D700F905B6 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		280F99762B62A0D700F905B6 /* DIProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DIProtocol.swift; sourceTree = "<group>"; };
+		280F99782B62A0D700F905B6 /* BaseUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseUseCase.swift; sourceTree = "<group>"; };
+		280F99792B62A0D700F905B6 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		280F997A2B62A0D700F905B6 /* BaseViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		280F997B2B62A0D700F905B6 /* BaseRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseRouter.swift; sourceTree = "<group>"; };
+		280F997C2B62A0D700F905B6 /* BaseMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseMapper.swift; sourceTree = "<group>"; };
+		280F997D2B62A0D700F905B6 /* CleanArchKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CleanArchKit.h; path = ../../Sources/CleanArchKit/CleanArchKit.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,14 +69,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2525942C29F27DCC0007F0D1 /* Mock */ = {
-			isa = PBXGroup;
-			children = (
-				2525942D29F27DE30007F0D1 /* MockMapper.swift */,
-			);
-			path = Mock;
-			sourceTree = "<group>";
-		};
 		256205F229E5A2CB00896F1C = {
 			isa = PBXGroup;
 			children = (
@@ -99,9 +91,9 @@
 		256205FE29E5A2CB00896F1C /* CleanArchKit */ = {
 			isa = PBXGroup;
 			children = (
-				256205FF29E5A2CB00896F1C /* CleanArchKit.h */,
-				2562063429E5A4E400896F1C /* Protocol */,
-				2562063529E5A4F400896F1C /* Base */,
+				280F99772B62A0D700F905B6 /* Base */,
+				280F997D2B62A0D700F905B6 /* CleanArchKit.h */,
+				280F99722B62A0D700F905B6 /* Protocol */,
 			);
 			path = CleanArchKit;
 			sourceTree = "<group>";
@@ -109,33 +101,10 @@
 		2562060829E5A2CB00896F1C /* CleanArchKitTests */ = {
 			isa = PBXGroup;
 			children = (
-				2525942C29F27DCC0007F0D1 /* Mock */,
-				2562060929E5A2CB00896F1C /* CleanArchKitTests.swift */,
+				280F996B2B629F7700F905B6 /* CleanArchKitTests.swift */,
+				280F996F2B62A09200F905B6 /* Mocks */,
 			);
 			path = CleanArchKitTests;
-			sourceTree = "<group>";
-		};
-		2562063429E5A4E400896F1C /* Protocol */ = {
-			isa = PBXGroup;
-			children = (
-				2562063629E5A55D00896F1C /* ViewModelProtocol.swift */,
-				2562063A29E5A5D000896F1C /* ViewControllerProtocol.swift */,
-				2562063C29E5A5E100896F1C /* DIProtocol.swift */,
-				2562064029E5A61800896F1C /* Router.swift */,
-			);
-			path = Protocol;
-			sourceTree = "<group>";
-		};
-		2562063529E5A4F400896F1C /* Base */ = {
-			isa = PBXGroup;
-			children = (
-				2562063829E5A58A00896F1C /* BaseViewModel.swift */,
-				2562063E29E5A5F300896F1C /* BaseViewController.swift */,
-				2562064229E5A64700896F1C /* BaseRouter.swift */,
-				25C293D629E6A0830062AE27 /* BaseUseCase.swift */,
-				25C293D829E6A0BD0062AE27 /* BaseMapper.swift */,
-			);
-			path = Base;
 			sourceTree = "<group>";
 		};
 		2562064429E5A6B100896F1C /* Frameworks */ = {
@@ -146,6 +115,40 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		280F996F2B62A09200F905B6 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				280F99702B62A0A100F905B6 /* MockMapper.swift */,
+			);
+			name = Mocks;
+			path = ../../Tests/CleanArchKitTests/Mocks;
+			sourceTree = "<group>";
+		};
+		280F99722B62A0D700F905B6 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				280F99732B62A0D700F905B6 /* ViewControllerProtocol.swift */,
+				280F99742B62A0D700F905B6 /* ViewModelProtocol.swift */,
+				280F99752B62A0D700F905B6 /* Router.swift */,
+				280F99762B62A0D700F905B6 /* DIProtocol.swift */,
+			);
+			name = Protocol;
+			path = ../../Sources/CleanArchKit/Protocol;
+			sourceTree = "<group>";
+		};
+		280F99772B62A0D700F905B6 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				280F99782B62A0D700F905B6 /* BaseUseCase.swift */,
+				280F99792B62A0D700F905B6 /* BaseViewController.swift */,
+				280F997A2B62A0D700F905B6 /* BaseViewModel.swift */,
+				280F997B2B62A0D700F905B6 /* BaseRouter.swift */,
+				280F997C2B62A0D700F905B6 /* BaseMapper.swift */,
+			);
+			name = Base;
+			path = ../../Sources/CleanArchKit/Base;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -153,7 +156,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2562060B29E5A2CB00896F1C /* CleanArchKit.h in Headers */,
+				280F99872B62A0D700F905B6 /* CleanArchKit.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,6 +215,7 @@
 					};
 					2562060329E5A2CB00896F1C = {
 						CreatedOnToolsVersion = 14.2;
+						LastSwiftMigration = 1520;
 					};
 				};
 			};
@@ -256,15 +260,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				25C293D729E6A0830062AE27 /* BaseUseCase.swift in Sources */,
-				2562063F29E5A5F300896F1C /* BaseViewController.swift in Sources */,
-				2562063B29E5A5D000896F1C /* ViewControllerProtocol.swift in Sources */,
-				2562064329E5A64700896F1C /* BaseRouter.swift in Sources */,
-				2562063729E5A55D00896F1C /* ViewModelProtocol.swift in Sources */,
-				2562063D29E5A5E100896F1C /* DIProtocol.swift in Sources */,
-				25C293D929E6A0BD0062AE27 /* BaseMapper.swift in Sources */,
-				2562064129E5A61800896F1C /* Router.swift in Sources */,
-				2562063929E5A58A00896F1C /* BaseViewModel.swift in Sources */,
+				280F997F2B62A0D700F905B6 /* ViewModelProtocol.swift in Sources */,
+				280F99802B62A0D700F905B6 /* Router.swift in Sources */,
+				280F99812B62A0D700F905B6 /* DIProtocol.swift in Sources */,
+				280F99842B62A0D700F905B6 /* BaseViewModel.swift in Sources */,
+				280F99822B62A0D700F905B6 /* BaseUseCase.swift in Sources */,
+				280F997E2B62A0D700F905B6 /* ViewControllerProtocol.swift in Sources */,
+				280F99862B62A0D700F905B6 /* BaseMapper.swift in Sources */,
+				280F99832B62A0D700F905B6 /* BaseViewController.swift in Sources */,
+				280F99852B62A0D700F905B6 /* BaseRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,8 +276,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2525942E29F27DE30007F0D1 /* MockMapper.swift in Sources */,
-				2562060A29E5A2CB00896F1C /* CleanArchKitTests.swift in Sources */,
+				280F99712B62A0A100F905B6 /* MockMapper.swift in Sources */,
+				280F996D2B629F7700F905B6 /* CleanArchKitTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,7 +343,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -396,7 +400,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -424,7 +428,7 @@
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.kangama.CleanArchKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
@@ -452,7 +456,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.kangama.CleanArchKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
@@ -469,17 +473,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = FEV8Q8DHKC;
 				FRAMEWORK_SEARCH_PATHS = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				HEADER_SEARCH_PATHS = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.kangama.CleanArchKitTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -489,13 +495,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = FEV8Q8DHKC;
 				FRAMEWORK_SEARCH_PATHS = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				HEADER_SEARCH_PATHS = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.kangama.CleanArchKitTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
